@@ -3,14 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuwanie Tła</title>
+    <title>PixSnap.ai</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Usuwanie Tła z Obrazów</h1>
-    <form action="/remove-bg" method="post" enctype="multipart/form-data">
-        <label for="image">Wybierz obraz:</label>
-        <input type="file" id="image" name="image" accept="image/*" required>
-        <button type="submit">Usuń tło</button>
-    </form>
+    <header>
+        <div class="logo-section">
+            <img src="/static/logo.png" alt="PixSnap Logo" class="logo">
+            <h1>PixSnap.ai</h1>
+        </div>
+        <div class="user-section">
+            <div class="premium">
+                <img src="/static/premium-icon.png" alt="Premium Points">
+                <span id="premium-count">0</span>
+            </div>
+            <div class="login">
+                <img src="/static/user-icon.png" alt="Login" id="login-icon">
+                <div class="login-menu">
+                    <button onclick="loginWithGoogle()">Log in</button>
+                    <button onclick="register()">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Info</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="features">
+            <div class="feature">
+                <h2>Remove Background</h2>
+                <p>Automatically remove backgrounds from images.</p>
+            </div>
+            <div class="feature">
+                <h2>Generate Background</h2>
+                <p>Create custom backgrounds for your images.</p>
+            </div>
+            <div class="feature">
+                <h2>Animate Images</h2>
+                <p>Breathe life into still images with animations.</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

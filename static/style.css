@@ -1,0 +1,120 @@
+/* Ogólne stylizacje */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nagłówek */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.premium {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.premium img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.login {
+    position: relative;
+}
+
+.login img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.login-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login:hover .login-menu {
+    display: block;
+}
+
+/* Pasek boczny */
+aside {
+    width: 200px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    padding: 10px 20px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    color: #0078d7;
+}
+
+/* Główna sekcja */
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    color: #0078d7;
+}
